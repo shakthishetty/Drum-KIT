@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+  text-align: center;
+  background-color: #283149;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Responsive Heading */
+h1 {
+  font-size: 10vw; /* Scales with viewport width */
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+  margin: 20px 0;
+}
+
+/* Responsive Footer */
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+  font-size: 2vw;
+  margin: 20px 0;
+}
+
+/* Drum Button Styles */
+.drum {
+  outline: none;
+  border: 1vw solid #404B69;
+  font-size: 5vw; /* Scales with viewport width */
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 20vw; /* 20% of viewport width */
+  height: 20vw; /* 20% of viewport width */
+  text-align: center;
+  margin: 1vw;
+  background-color: white;
+}
+
+/* Drum Button Background Images */
+.w { background-image: url("images/tom1.png"); }
+.a { background-image: url("images/tom2.png"); }
+.s { background-image: url("images/tom3.png"); }
+.d { background-image: url("images/tom4.png"); }
+.j { background-image: url("images/snare.png"); }
+.k { background-image: url("images/crash.png"); }
+.l { background-image: url("images/kick.png"); }
+
+/* Responsive Set Container */
+.set {
+  margin: 5% auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Game Over Styles */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* Button Pressed Effect */
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+/* Red Text */
+.red {
+  color: red;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Tablet View Adjustments */
+  h1 {
+    font-size: 8vw;
+  }
+  footer {
+    font-size: 3vw;
+  }
+  .drum {
+    width: 25vw;
+    height: 25vw;
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile View Adjustments */
+  h1 {
+    font-size: 12vw;
+  }
+  footer {
+    font-size: 4vw;
+  }
+  .drum {
+    width: 35vw;
+    height: 35vw;
+    font-size: 7vw;
+  }
+}
